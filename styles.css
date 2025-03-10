@@ -1,4 +1,14 @@
-.myButton {
+body {
+  background-color: lightblue;
+}
+
+.signUpForm input{
+  background-color: lightblue;
+  border-radius: 15px;
+  border-color: black;
+}
+
+.signUpButton {
 	box-shadow:inset 0px 0px 15px 3px #23395e;
 	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
 	background-color:#2e466e;
@@ -16,11 +26,38 @@
 	display: block;
 	margin:0 auto;
 }
-.myButton:hover {
+.signUpButton:hover {
 	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
 	background-color:#415989;
 }
-.myButton:active {
+.signUpButton:active {
 	position:relative;
 	top:1px;
+}
+
+#title {
+  text-align: center;
+}
+
+.fname {
+  display: block;
+  text-align: center;
+}
+
+.lname {
+  display: block;
+  text-align: center;
+  
+}
+
+.fnameInput {
+  display: block;
+  margin:0 auto;
+  width: 20%;
+}
+
+.lnameInput {
+  display: block;
+  margin:0 auto;
+  width: 20%;
 }
