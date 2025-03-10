@@ -50,6 +50,11 @@ body {
   
 }
 
+.email {
+  display: block;
+  text-align: center;
+}
+
 .fnameInput {
   display: block;
   margin:0 auto;
@@ -57,6 +62,12 @@ body {
 }
 
 .lnameInput {
+  display: block;
+  margin:0 auto;
+  width: 20%;
+}
+
+.emailInput {
   display: block;
   margin:0 auto;
   width: 20%;
