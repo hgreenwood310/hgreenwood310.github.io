@@ -2,16 +2,26 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <script>
+    function validateForm() {
+      let x = document.forms["myForm"]["fname"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+  }
+}
+</script>
   </head>
   <body>
       <h1 id="title">Sign Up</h1>
-      <form class="signUpForm">
+      <form class="signUpForm" name="signUpForm" onsubmit="return validateForm()">
         <label for="fnameInput" class="fname">First Name</label>
         <input class="fnameInput" type="text" id="fnameInput" name="fnameInput"><br>
         <label for="lnameInput" class="fname">Last Name</label>
         <input class="lnameInput" type="text" id="lnameInput" name="lnameInput"><br>
-        <input type="submit" class="signUpButton" value="Sign Up!" onclick="convertToJSON()">
+        <label for="emailInput" class="email">Email</label>
+        <input class="emailInput" type="email" name="emailInput" id="emailInput"><br>
+        <input type="submit" class="signUpButton" value="Sign Up!">
       </form>
-    <script src="convertToJSON.js"></script>
   </body>
 </html>
